@@ -1,0 +1,27 @@
+Bundle-Name: Ha-VIS Custom Assignment Control App
+Bundle-SymbolicName: havis.custom.harting.assignmentcontrol
+Bundle-Version: 2.6.1
+Application-Name: Assignment Control
+Implementation-Version: 2.6
+Bundle-ManifestVersion: 2
+Bundle-Vendor: HARTING IT_SD
+Havis-Bundle: 
+ /OSGI-INF/havis.custom.harting.assignmentcontrol.properties
+Bundle-Activator: havis.custom.harting.assignmentcontrol.osgi.Activator
+Import-Package: 
+ com.fasterxml.jackson.annotation,
+ com.fasterxml.jackson.databind,
+ havis.middleware.ale.service,
+ havis.middleware.ale.service.ec,
+ havis.middleware.ale.service.mc,
+ havis.middleware.ale.service.pc,
+ havis.net.rest.shared,
+ havis.net.rest.shared.data,
+ javax.ws.rs,
+ javax.ws.rs.core,
+ javax.ws.rs.ext,
+ javax.xml.bind,
+ org.osgi;resolution:=optional,
+ org.osgi.framework;resolution:=optional,
+ org.osgi.util.tracker;resolution:=optional
+
