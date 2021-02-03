@@ -1,0 +1,59 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with
+		type="havis.custom.harting.assignmentcontrol.ui.resourcebundle.AppResources"
+		field="res" />
+
+	<ui:with
+		type="havis.custom.harting.assignmentcontrol.ui.resourcebundle.ConstantsResource"
+		field="i18n" />
+
+	<ui:with type="havis.net.ui.shared.resourcebundle.ResourceBundle"
+		field="res1"></ui:with>
+
+	<ui:style>
+	.m {
+		margin-bottom: 0.5em;
+	}
+	</ui:style>
+
+	<g:FlowPanel ui:field="container">
+		<g:FlowPanel addStyleNames="{res1.css.row} {style.m}">
+			<g:Label text="{i18n.assignmentURI}" ui:field="labelAssignmentURI"
+				styleName="{res.css.Label}" />
+			<g:TextBox ui:field="assignmentUriTextBox" styleName="{res.css.webuiTextBox}" />
+		</g:FlowPanel>
+		<g:FlowPanel addStyleNames="{res1.css.row} {style.m}">
+			<g:Label text="{i18n.locationName}" ui:field="labelLocationName"
+				styleName="{res.css.Label}" />
+			<g:TextBox ui:field="locationNameTextBox" styleName="{res.css.webuiTextBox}" />
+		</g:FlowPanel>
+		<g:FlowPanel addStyleNames="{res1.css.row} {style.m}">
+			<g:Label text="{i18n.locationID}" ui:field="labelLocationID"
+				styleName="{res.css.Label}" />
+			<g:TextBox ui:field="locationIdTextBox" styleName="{res.css.webuiTextBox}" />
+		</g:FlowPanel>
+		<g:FlowPanel addStyleNames="{res1.css.row} {style.m}">
+			<g:Label text="{i18n.triggerHoldTime}" ui:field="labelTriggerHoldTime"
+				styleName="{res.css.Label}" />
+			<g:TextBox ui:field="triggerHoldTime" styleName="{res.css.webuiTextBox}" />
+		</g:FlowPanel>
+		<g:FlowPanel addStyleNames="{res1.css.row} {style.m}">
+			<g:Label text="{i18n.tagTimeout}" ui:field="labelTagTimeout"
+				styleName="{res.css.Label}" />
+			<g:TextBox ui:field="tagTimeout" styleName="{res.css.webuiTextBox}" />
+		</g:FlowPanel>
+		<g:FlowPanel addStyleNames="{res1.css.row} {style.m}">
+			<g:Label text="{i18n.activateSwitch}" ui:field="labelActivateSwitch"
+				styleName="{res.css.Label}" />
+			<g:ToggleButton ui:field="toggleButtonActivateSwitch" />
+		</g:FlowPanel>
+		<g:FlowPanel addStyleNames="{res1.css.row} {style.m}">
+			<g:Label text="{i18n.scanTrigger}" ui:field="labelScanTrigger"
+				styleName="{res.css.Label}" />
+			<g:ToggleButton ui:field="toggleButtonScanTrigger" />
+		</g:FlowPanel>
+	</g:FlowPanel>
+</ui:UiBinder> 

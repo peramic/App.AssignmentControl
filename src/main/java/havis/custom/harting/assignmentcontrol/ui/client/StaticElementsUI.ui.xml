@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with
+		type="havis.custom.harting.assignmentcontrol.ui.resourcebundle.AppResources" field="res" />
+
+	<ui:with
+		type="havis.custom.harting.assignmentcontrol.ui.resourcebundle.ConstantsResource" field="i18n" />
+
+	<g:HTMLPanel>
+		<g:Button text="{i18n.sendAccept}" ui:field="sendAcceptButton" styleName="{res.css.webuiApplyButton}" />
+	</g:HTMLPanel>
+</ui:UiBinder> 
